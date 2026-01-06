@@ -5,78 +5,83 @@ import Image from "next/image"
 import Link from "next/link"
 import { HiOutlineMenuAlt4, HiOutlineX } from "react-icons/hi";
 
-
-
 export default function Navbar() {
-
-    const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-    const toggleDropDownOpen = () => setIsDropDownOpen(prev => !prev);
-
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
 
-
     return (
-        <nav className=" top-0 z-50 dark:bg-gray-900 bg-gray-50">
+        // Added 'sticky' and 'relative'
+        <nav className="top-0 z-50 w-full relative border-b border-gray-200 dark:border-gray-800 dark:bg-gray-900 bg-gray-50">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
-                <div className="flex justify-start px-4">
-                    <Link href="/" className="flex justify-between flex-row items-center space-x-2">
+
+                {/* Logo Section */}
+                <div className="flex justify-start">
+                    <Link href="/" className="flex items-center space-x-3">
                         <Image
                             src="/logo.webp"
-                            alt="Zanari Header logo"
+                            alt="Zanari Logo"
                             width={36}
                             height={36}
+                            className="rounded-sm"
                         />
-                        <div className="hidden lg:flex flex-col leading-relaxed">
-                            <h1 className="uppercase font-bold dark:text-gray-50 text-gray-950 text-base">
+                        <div className="hidden sm:flex flex-col leading-none">
+                            <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-tighter">
                                 Zanari
-                            </h1>
-                            <h1 className="uppercase font-bold dark:text-gray-50 text-gray-950 text-base">
+                            </span>
+                            <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-tighter">
                                 Capital
-                            </h1>
+                            </span>
                         </div>
                     </Link>
                 </div>
-                <div className="hidden lg:flex lg:justify-center space-x-6">
-                    <Link href="/features" className="text-gray-950 dark:text-gray-50 font-semibold">Features</Link>
-                    <Link href="/about" className="text-gray-950 dark:text-gray-50 font-semibold">About</Link>
-                    <Link href="/waitlist" className="text-gray-950 dark:text-gray-50 font-semibold">Waitlist</Link>
+
+                {/* Desktop Navigation - Synced to lg breakpoint */}
+                <div className="hidden lg:flex lg:justify-center space-x-8">
+                    <Link href="/features" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Features</Link>
+                    <Link href="/learn" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Learn</Link>
+                    <Link href="/about" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">About</Link>
+                    {/* <Link href="/waitlist" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Waitlist</Link> */}
                 </div>
-                <div className="md:hidden ">
-                    <button
-                        onClick={toggleMobileMenu}
-                        aria-label="Toggle mobile menu"
-                        className="p-2 rounded-md hover:bg-gray-200 focus:outline-none"
-                    >
-                        {isMobileMenuOpen ? (
-                            <HiOutlineX size={30} className="dark:text-gray-100 text-gray-800" />
-                        ) : (
-                            <HiOutlineMenuAlt4 size={30} className="dark:text-gray-100 text-gray-800" />
-                        )}
-                    </button>
+
+                {/* CTA Button & Mobile Toggle */}
+                <div className="flex items-center space-x-4">
+                    <Link href="/waitlist" className="hidden md:inline-flex px-5 py-2.5 text-sm font-bold bg-gray-950 dark:bg-gray-50 text-white dark:text-gray-950 rounded-full hover:opacity-90 transition shadow-md">
+                        Join Waitlist
+                    </Link>
+
+                    {/* Mobile Menu Button - Synced to lg:hidden */}
+                    <div className="lg:hidden">
+                        <button
+                            onClick={toggleMobileMenu}
+                            aria-label="Toggle mobile menu"
+                            className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+                        >
+                            {isMobileMenuOpen ? (
+                                <HiOutlineX size={28} className="dark:text-gray-100 text-gray-800" />
+                            ) : (
+                                <HiOutlineMenuAlt4 size={28} className="dark:text-gray-100 text-gray-800" />
+                            )}
+                        </button>
+                    </div>
                 </div>
-                <div className="lg:flex md:flex hidden justify-end">
-                    <Link href="/waitlist" className="px-6 py-3 
-                text-lg font-bold 
-                bg-gray-50 text-gray-900 
-                rounded-xl 
-                hover:bg-gray-50 transition duration-300 
-                shadow-xl 
-                transform hover:scale-[1.03]">Join Waitlist</Link>
-                </div>
+
+                {/* Mobile Dropdown Menu */}
                 <div
-                    className={`absolute left-0 w-full transition-all duration-400 ease-in-out md:hidden bg-neutral-500 backdrop-blur supports-backdrop-filter:bg-background/80 shadow-lg ${isMobileMenuOpen
-                        ? 'top-full opacity-100 visible'
-                        : '-top-96 opacity-0 invisible'
+                    className={`absolute left-0 top-full w-full transition-all duration-300 ease-in-out lg:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-xl overflow-hidden ${isMobileMenuOpen ? 'max-h-125 opacity-100' : 'max-h-0 opacity-0'
                         }`}
                 >
-                    <ul className="flex flex-col p-6 space-y-4 list-none">
-                        <li><Link href="/features" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Features</Link></li>
-                        <li><Link href="/about" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>About Us</Link></li>
-                        <li><Link href="/waitlist" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Waitlist</Link></li>
-                        <li><Link href="/contact" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Contact Us</Link></li>
-                        <li><Link href="/privacy" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Privacy Policy</Link></li>
-                        <li><Link href="/terms" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Terms of Use</Link></li>
+                    <ul className="flex flex-col p-6 space-y-2">
+                        {['Features', 'About Us', 'Waitlist', 'Contact Us', 'Privacy Policy'].map((item) => (
+                            <li key={item}>
+                                <Link
+                                    href={`/${item.toLowerCase().replace(' ', '')}`}
+                                    className="block px-4 py-3 text-lg font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    {item}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
