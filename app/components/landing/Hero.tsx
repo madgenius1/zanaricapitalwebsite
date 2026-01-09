@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
 
                 {/* Small Top Badge */}
-                <Link href="#" className="inline-flex items-center gap-2 mb-8 group cursor-pointer">
+                <Link href="/beta" className="inline-flex items-center gap-2 mb-8 group cursor-pointer">
                     <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-gray-700 dark:text-gray-300">
                         Zanari Capital • Pre-Launch Access
                     </span>
@@ -32,7 +32,7 @@ export default function Hero() {
 
                 {/* Call to Action Button */}
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/beta" className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-gray-950 dark:bg-gray-50 text-white dark:text-gray-950 rounded-lg transition-all duration-200 shadow-lg">
+                    <Link href="/beta" className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-gray-950 dark:bg-gray-50 text-white dark:text-gray-950 transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg shadow-lg">
                         Join Beta
                         <HiArrowRight className="w-5 h-5" />
                     </Link>

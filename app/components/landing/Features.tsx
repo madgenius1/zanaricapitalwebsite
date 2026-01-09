@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { HiShieldCheck, HiArrowUpRight, HiMiniArrowTrendingUp } from "react-icons/hi2";
-import { HiChartBar, HiCash } from "react-icons/hi";
+import { HiChartBar, HiCash, HiBadgeCheck } from "react-icons/hi";
 
 interface Product {
     id: string;
@@ -62,23 +62,35 @@ const PRODUCTS: Product[] = [
         metric: "Live updates",
         image: "/analytics.webp",
         cta: "View Insights",
-        gridClasses: "col-span-1 md:col-span-2 lg:col-span-12 lg:row-span-1",
+        gridClasses: "col-span-1 md:col-span-2 lg:col-span-6 lg:row-span-1",
         accent: "group-hover:bg-orange-600/20",
         icon: HiShieldCheck,
+    },
+    {
+        id: "learn",
+        category: "Learning",
+        title: "Learn Investment",
+        description: "Learn the skills to invest successfully.",
+        metric: "Dynamic Learning",
+        image: "/learn.webp",
+        cta: "Learn More",
+        gridClasses: "col-span-1 md:col-span-2 lg:col-span-6 lg:row-span-1",
+        accent: "group-hover:bg-green-600/20",
+        icon: HiBadgeCheck,
     },
 ];
 
 export default function InvestmentBento() {
     return (
-        <section className="py-16 lg:py-24 bg-white dark:bg-gray-950">
+        <section className="py-16 lg:py-24 px-2 bg-white dark:bg-gray-950">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Header */}
                 <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div className="max-w-3xl space-y-2">
                         <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
-                            One App <br /> <span className="text-gray-400"> Every Kenyan Financial Asset. </span>
+                            One App <br /> <span className="text-gray-600"> Every Kenyan Financial Asset. </span>
                         </h2>
-                        <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg md:text-xl">
+                        <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
                             Invest in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
                             through a world-class platform.
                         </p>
@@ -135,7 +147,7 @@ export default function InvestmentBento() {
                                         <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
                                             {product.title}
                                         </h3>
-                                        <p className="mt-2 text-sm md:text-base text-gray-300 line-clamp-2 max-w-sm">
+                                        <p className="mt-2 text-sm md:text-base text-gray-100 line-clamp-2 max-w-sm">
                                             {product.description}
                                         </p>
                                     </div>
