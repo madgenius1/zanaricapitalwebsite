@@ -33,7 +33,7 @@ export default function Hero() {
                 {/* Call to Action Button */}
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/beta" className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-gray-950 dark:bg-gray-50 text-white dark:text-gray-950 transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg shadow-lg">
-                        Join Beta
+                        Join the Beta Waitlist
                         <HiArrowRight className="w-5 h-5" />
                     </Link>
 

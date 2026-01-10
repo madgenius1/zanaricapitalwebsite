@@ -3,6 +3,7 @@ import Link from "next/link";
 const FOOTER_LINKS = [
     { name: "Features", href: "/features" },
     { name: "About Us", href: "/about" },
+    { name: "Learn", href: "/learn" },
     { name: "Waitlist", href: "/waitlist" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Use", href: "/terms" },

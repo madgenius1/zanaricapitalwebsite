@@ -86,9 +86,9 @@ export default function InvestmentBento() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Header */}
                 <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div className="max-w-3xl space-y-2">
+                    <div className="max-w-4xl space-y-2">
                         <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
-                            One App <br /> <span className="text-gray-600"> Every Kenyan Financial Asset. </span>
+                            One App <br /> <span className="text-gray-600"> Every Kenyan Asset. </span>
                         </h2>
                         <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
                             Invest in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
