@@ -38,6 +38,7 @@ export default function Navbar() {
                 {/* Desktop Navigation - Synced to lg breakpoint */}
                 <div className="hidden lg:flex lg:justify-center space-x-8">
                     <Link href="/features" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Features</Link>
+                    <Link href="/rafiki" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Rafiki AI</Link>
                     <Link href="/learn" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Learn</Link>
                     <Link href="/about" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">About</Link>
                     {/* <Link href="/waitlist" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Waitlist</Link> */}
