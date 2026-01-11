@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function CTA() {
 
     return (
-        <section className="py-12 md:py-20 px-6 bg-white dark:bg-gray-950 transition-colors duration-500">
+        <section className="py-12 md:py-20 px-4 bg-white dark:bg-gray-950 transition-colors duration-500">
             <div className="max-w-5xl mx-auto px-6 py-12 border border-gray-200/60 dark:border-white/10 bg-gray-50 dark:bg-gray-900 shadow-2xl rounded-3xl lg:px-12 relative overflow-hidden">
 
                 {/* Decorative Background Element for Dark Mode */}
@@ -21,7 +21,7 @@ export default function CTA() {
                         The future of Kenyan <br className="hidden md:block" /> investing is here.
                     </h2>
 
-                    <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed mb-10">
+                    <p className="text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed mb-10">
                         We are currently in the <strong>CMA Regulatory Sandbox phase</strong>,
                         perfecting a secure, world-class experience. Join the waitlist for
                         priority access to NSE stocks, ETFs, and automated portfolios.
@@ -32,7 +32,7 @@ export default function CTA() {
                     </Link>
 
                     {/* Trust Signals Footer */}
-                    <div className="mt-10 pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col md:flex-row items-center justify-center gap-6 text-xs uppercase tracking-widest text-gray-500 dark:text-gray-500">
+                    <div className="mt-10 pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col md:flex-row items-center justify-center gap-6 text-xs uppercase tracking-widest text-gray-600 dark:text-gray-400">
                         <div className="flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                             CMA Sandbox Progress

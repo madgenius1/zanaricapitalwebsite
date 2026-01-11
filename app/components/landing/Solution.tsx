@@ -35,7 +35,7 @@ const FEATURES = [
 export default function Solution() {
     return (
         <section className="py-16 lg:py-24 px-4 bg-gray-50 dark:bg-gray-900">
-            <div className="max-w-7xl mx-auto px-2">
+            <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div className="max-w-4xl space-y-2">
