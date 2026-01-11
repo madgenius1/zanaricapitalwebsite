@@ -24,7 +24,7 @@ export default function Navbar() {
                             height={36}
                             className="rounded-sm"
                         />
-                        <div className="hidden sm:flex flex-col leading-none">
+                        <div className="flex flex-col leading-none">
                             <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-wider">
                                 Zanari
                             </span>

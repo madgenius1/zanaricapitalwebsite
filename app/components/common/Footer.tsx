@@ -62,7 +62,7 @@ export default function Footer() {
                     <div className="col-span-2 sm:col-span-4 lg:col-span-4 space-y-6">
                         <Link href="/" className="flex items-center gap-3">
                             <Image src="/logo.webp" alt="Zanari Logo" width={36} height={36} className="rounded-sm" />
-                            <div className="hidden sm:flex flex-col leading-none">
+                            <div className="flex flex-col leading-none">
                                 <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-wider">
                                     Zanari
                                 </span>
@@ -72,7 +72,7 @@ export default function Footer() {
                             </div>
                         </Link>
 
-                        <p className="text-sm text-gray-500 dark:text-gray-400 max-w-sm">
+                        <p className="text-sm text-gray-800 font-medium dark:text-white max-w-sm">
                             Democratizing wealth creation for Kenyans by enabling seamless buying and selling of NSE and global market securities.
                         </p>
 

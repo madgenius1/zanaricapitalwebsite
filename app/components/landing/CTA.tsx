@@ -13,7 +13,7 @@ export default function CTA() {
                     {/* Social Proof Badge */}
                     <div className="flex flex-col items-center justify-center gap-3 mb-8">
                         <p className="text-sm font-medium text-blue-700 dark:text-blue-400">
-                            Join 1,618 investors in Zanari
+                            Join 1,618+ investors who trust Zanari Capital
                         </p>
                     </div>
 

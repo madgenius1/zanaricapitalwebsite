@@ -5,17 +5,19 @@ import Rafiki from "./components/landing/Rafiki";
 import SlideShow from "./components/landing/SlideShow";
 import Solution from "./components/landing/Solution";
 import SellingPoints from "./components/landing/SellingPoints";
+import FAQs from "./components/landing/FAQs";
 
 export default function Page() {
   return (
     <>
       <Hero />
-      <SellingPoints />
       <SlideShow />
+      <SellingPoints />
       <Features />
       <Solution />
       <CTA />
       <Rafiki />
+      <FAQs />
     </>
   );
 }

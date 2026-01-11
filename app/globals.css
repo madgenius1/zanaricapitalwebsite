@@ -19,6 +19,19 @@
   }
 }
 
+@keyframes partner-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-partner-scroll {
+  animation: partner-scroll 18s linear infinite;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
