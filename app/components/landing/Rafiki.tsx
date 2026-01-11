@@ -12,11 +12,11 @@ export default function Rafiki() {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-100 dark:text-gray-950 mb-8">
                         Jambo, I&apos;m <span className="text-[#0066FF]">Rafiki</span>
                         <br />
-                        <span className="font-semibold">Your AI Robo-Advisor</span>
+                        <span className="font-medium text-md lg:text-3xl tracking-wide">Your AI Robo-Advisor from Zanari Capital</span>
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-800">
-                        Built to simplify investing and guide you with confidence.
+                        I am built to simplify investing and guide you with confidence.
                     </p>
                 </div>
 

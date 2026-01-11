@@ -37,13 +37,15 @@ export default function Solution() {
         <section className="py-16 lg:py-24 px-4 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-2">
                 {/* Header */}
-                <div className="max-w-4xl space-y-2 mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white">
-                        Built for the Kenyan and Diaspora Investors
-                    </h2>
-                    <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
-                        Open, manage, and protect your investments across stocks, bonds, and digital portfolios — without friction.
-                    </p>
+                <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div className="max-w-4xl space-y-2">
+                        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white gap-2">
+                            Built for the Kenyan and Diaspora Investors
+                        </h2>
+                        <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
+                            Open, manage, grow and protect your investments across stocks, ETFs, and bonds through the Zanari Capital Mobile App.
+                        </p>
+                    </div>
                 </div>
 
                 {/* Features Grid */}
