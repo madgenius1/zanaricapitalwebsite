@@ -18,10 +18,10 @@ export default function SellingPoints() {
       bg: "bg-emerald-50 dark:bg-gray-950",
     },
     {
-      title: "Intelligence",
+      title: "Transparency",
       tagline: "Knowledge is your greatest asset.",
       description:
-        "Our AI-driven insights and curated educational tools cut through the market noise, giving you the clarity and confidence to make informed decisions on purchasing stocks in the NSE.",
+        "We offer real-time market data, no hidden fees, direct access to your money giving you clarity and the confidence to make informed decisions in the NSE market.",
       accent: "text-violet-600 dark:text-violet-400",
       bg: "bg-violet-50 dark:bg-gray-950",
     },
