@@ -16,11 +16,11 @@ interface AccordionItem {
 const accordionItems: AccordionItem[] = [
     {
         title: "What does joining the waitlist mean?",
-        description: "Joining the waitlist gives you early access to Zanari Capital when we launch. You’ll be among the first users invited to test the platform, receive product updates, and access features before public release.",
+        description: "Joining the waitlist gives you early access to Zanari when we launch. You’ll be among the first users invited to test the platform, receive product updates, and access features before public release.",
     },
     {
-        title: "Is Zanari Capital live right now?",
-        description: "Not yet. Zanari Capital is currently in a pre-launch and beta phase. We are onboarding users gradually to ensure security, regulatory compliance, and a smooth experience.",
+        title: "Is Zanari live right now?",
+        description: "Not yet. Zanari is currently in a pre-launch and beta phase. We are onboarding users gradually to ensure security, regulatory compliance, and a smooth experience.",
     },
     {
         title: "Does joining the waitlist cost anything?",

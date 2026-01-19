@@ -24,7 +24,7 @@ const PRODUCTS: Product[] = [
         title: "Nairobi Securities Exchange",
         description: "Trade Blue-chip and high Dividend Stocks in the NSE with real time pricing.",
         metric: "Avg. daily volume: KES 2.1B",
-        image: "/stocktrade.webp",
+        image: "/stockchart.webp",
         cta: "Trade Stocks",
         gridClasses: "col-span-1 md:col-span-2 lg:col-span-8 lg:row-span-2",
         accent: "group-hover:bg-blue-600/20",

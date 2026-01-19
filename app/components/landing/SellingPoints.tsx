@@ -7,7 +7,7 @@ export default function SellingPoints() {
         "We’ve removed the barriers so you can start building your portfolio from as low as Ksh. 100, right from the palm of your hand.",
       accent: "text-blue-600 dark:text-blue-400",
       // Changed: Solid background for dark mode to prevent bleed-through
-      bg: "bg-blue-50 dark:bg-gray-950",
+      bg: "bg-blue-50 dark:bg-gray-900",
     },
     {
       title: "Inclusivity",
@@ -15,7 +15,7 @@ export default function SellingPoints() {
       description:
         "With fractional shares and zero account minimums, we’ve democratized the Kenyan financial market. With us, you have a seat at the table.",
       accent: "text-emerald-600 dark:text-emerald-400",
-      bg: "bg-emerald-50 dark:bg-gray-950",
+      bg: "bg-emerald-50 dark:bg-gray-900",
     },
     {
       title: "Transparency",
@@ -23,7 +23,7 @@ export default function SellingPoints() {
       description:
         "We offer real-time market data, no hidden fees, direct access to your money giving you clarity and the confidence to make informed decisions in the NSE market.",
       accent: "text-violet-600 dark:text-violet-400",
-      bg: "bg-violet-50 dark:bg-gray-950",
+      bg: "bg-violet-50 dark:bg-gray-900",
     },
     {
       title: "Security",
@@ -31,7 +31,7 @@ export default function SellingPoints() {
       description:
         "We employ bank-grade encryption, security, and multi-factor authentication to ensure your data and assets are protected by the most advanced safety protocols available today.",
       accent: "text-amber-600 dark:text-amber-400",
-      bg: "bg-amber-50 dark:bg-gray-950",
+      bg: "bg-amber-50 dark:bg-gray-900",
     },
   ]
 
