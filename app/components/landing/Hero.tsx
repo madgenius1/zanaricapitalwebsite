@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT: App Image */}
-        <div className="relative flex justify-center lg:justify-end">
+        <div className="relative flex justify-center">
           <div className="relative w-65 sm:w-75 lg:w-85 xl:w-95">
             <Image
               src="/heroscreen.png"
