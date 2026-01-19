@@ -30,7 +30,7 @@ export default function Hero() {
 
           {/* Sub-headline */}
           <p className="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-            Buy and sell NSE stocks, derivatives, invest in Secondary Bonds, and access ETFs, with direct ownership
+            Buy and sell NSE shares, derivatives, invest in Secondary Bonds, and access ETFs, with direct ownership
             from one secure, easy-to-use Zanari Mobile app.
           </p>
 

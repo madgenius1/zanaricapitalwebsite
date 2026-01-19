@@ -22,7 +22,7 @@ const PRODUCTS: Product[] = [
         id: "stocks",
         category: "Equities",
         title: "Nairobi Securities Exchange",
-        description: "Trade Safaricom, Equity, and top NSE stocks with real-time pricing and fast settlement.",
+        description: "Trade Blue-chip and high Dividend Stocks in the NSE with real time pricing.",
         metric: "Avg. daily volume: KES 2.1B",
         image: "/stocktrade.webp",
         cta: "Trade Stocks",
@@ -33,9 +33,9 @@ const PRODUCTS: Product[] = [
     {
         id: "bonds",
         category: "Fixed Income",
-        title: "Infrastructure Bonds",
+        title: "Secondary Bonds",
         description: "Low-risk, tax-free government-backed bonds.",
-        metric: "Yield up to 18.5%",
+        metric: "Low risk",
         image: "/bonds.webp",
         cta: "View Bonds",
         gridClasses: "col-span-1 md:col-span-1 lg:col-span-4 lg:row-span-1",
@@ -46,8 +46,8 @@ const PRODUCTS: Product[] = [
         id: "etfs",
         category: "Smart Investing",
         title: "ETFs",
-        description: "Globally diversified ETFs auto-balanced for you.",
-        metric: "From KES 5,000",
+        description: "Access Kenya's diversified ETFs auto-balanced for you.",
+        metric: "Securities and Assets",
         image: "/etfs.webp",
         cta: "Diversify Investments",
         gridClasses: "col-span-1 md:col-span-1 lg:col-span-4 lg:row-span-1",
@@ -58,7 +58,7 @@ const PRODUCTS: Product[] = [
         id: "analytics",
         category: "Insights",
         title: "Portfolio Analytics",
-        description: "Track performance and risk exposure in real time.",
+        description: "Breakdown and Track your performance and get real time market exposure for your portfolio.",
         metric: "Live updates",
         image: "/analytics.webp",
         cta: "View Insights",
@@ -69,8 +69,8 @@ const PRODUCTS: Product[] = [
     {
         id: "learn",
         category: "Learning",
-        title: "Learn Investment",
-        description: "Learn the skills to invest successfully.",
+        title: "Financial Literacy",
+        description: "Learn the skills to invest successfully from our curated courses.",
         metric: "Dynamic Learning",
         image: "/learn.webp",
         cta: "Learn More",
@@ -91,23 +91,11 @@ export default function InvestmentBento() {
                             One App <br /> Every Kenyan Asset
                         </h2>
                         <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
-                            Buy and sell shares in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
+                            Buy and sell shares in the Nairobi Securities Exchange, Secondary Bonds, access ETFs, and learn about investing
                             through a world-class mobile app.
                         </p>
                     </div>
                 </div>
-                {/* <div className="mb-12 sm:mb-16 text-center md:text-left">
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4 sm:mb-6">
-                        One App. <br />
-                        <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-emerald-500">
-                            Every Kenyan Asset.
-                        </span>
-                    </h2>
-                    <p className="max-w-xl mx-auto md:mx-0 text-gray-600 dark:text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed">
-                        Invest in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
-                        through a world-class platform.
-                    </p>
-                </div> */}
 
                 {/* Bento Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6 auto-rows-[300px] md:auto-rows-[250px]">
