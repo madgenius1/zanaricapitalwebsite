@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative w-65 sm:w-75 lg:w-85 xl:w-95">
             <Image
-              src="/screen.png"
+              src="/heroscreen.png"
               alt="Zanari mobile app dashboard showing NSE stocks and portfolio"
               width={380}
               height={760}
