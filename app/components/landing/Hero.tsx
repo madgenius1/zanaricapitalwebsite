@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="bg-gray-50 dark:bg-gray-950 min-h-screen flex items-center px-6 py-16 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
 
         {/* LEFT: Text Content */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col lg:items-start items-center">
 
           {/* Top Badge */}
           <Link
@@ -22,14 +22,14 @@ export default function Hero() {
           </Link>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-[1.1] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-[1.1] mb-6 lg:text-start text-center">
             Invest in Kenyan Stocks,
             <br />
             From Anywhere.
           </h1>
 
           {/* Sub-headline */}
-          <p className="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+          <p className="max-w-xl text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8 lg:text-start text-center">
             Buy and sell NSE shares, derivatives, invest in Secondary Bonds, and access ETFs, with direct ownership
             from one secure, easy-to-use Zanari Mobile app.
           </p>
@@ -50,8 +50,8 @@ export default function Hero() {
             <Image
               src="/heroscreen.png"
               alt="Zanari mobile app dashboard showing NSE stocks and portfolio"
-              width={380}
-              height={760}
+              width={360}
+              height={240}
               priority
               className="rounded-3xl shadow-2xl"
             />
