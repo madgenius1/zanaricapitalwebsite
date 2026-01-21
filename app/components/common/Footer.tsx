@@ -7,6 +7,7 @@ import {
     BsTiktok,
     BsInstagram,
     BsFacebook,
+    BsReddit
 } from "react-icons/bs"
 
 const FOOTER_LINKS = {
@@ -36,6 +37,7 @@ const SOCIAL_LINKS = [
     { name: "Facebook", icon: BsFacebook, href: "https://facebook.com/zanari" },
     { name: "Instagram", icon: BsInstagram, href: "https://instagram.com/zanari" },
     { name: "TikTok", icon: BsTiktok, href: "https://tiktok.com/@zanari" },
+    { name: "Reddit", icon: BsReddit, href: "https://reddit.com/zanari" },
     { name: "WhatsApp", icon: BsWhatsapp, href: "https://wa.me/zanari" },
 ]
 
