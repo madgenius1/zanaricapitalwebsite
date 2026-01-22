@@ -28,7 +28,7 @@ export default function ProblemSolution() {
                 {/* Title */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-                        Investing in Kenya shouldn&apos;t feel complicated.
+                        Investing in Kenya shouldn&apos;t be complicated.
                     </h2>
                 </div>
 

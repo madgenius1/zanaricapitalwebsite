@@ -82,7 +82,7 @@ const PRODUCTS: Product[] = [
 
 export default function InvestmentBento() {
     return (
-        <section className="py-8 lg:py-24 bg-white dark:bg-gray-950">
+        <section className="py-8 lg:py-24 bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Header */}
                 <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
