@@ -10,7 +10,7 @@ import Image from "next/image";
 const slides = [
     {
         title: "Deposit via M-Pesa",
-        description: "Instant deposits from KES 100",
+        description: "Instant deposits from Ksh. 100",
         image: "/deposit.png",
         alt: "Zanari capital instant deposits image"
     },

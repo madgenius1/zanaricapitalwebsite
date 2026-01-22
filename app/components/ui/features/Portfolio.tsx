@@ -60,7 +60,7 @@ export default function Portfolio() {
                     <div ref={cardRef} className="mb-8 p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
                         <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">Total Portfolio Value</div>
                         <div className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">
-                            KES {portfolioValue.toLocaleString()}
+                            Ksh. {portfolioValue.toLocaleString()}
                         </div>
                         <div className="flex items-center gap-2 text-green-600 dark:text-green-400">
                             <FiTrendingUp className="w-5 h-5" />
@@ -137,13 +137,13 @@ export default function Portfolio() {
                             {/* Goal Details */}
                             <div className="flex flex-col justify-center">
                                 <div className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                                    KES 200,000
+                                    Ksh 220,000
                                 </div>
                                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                                     Target by Dec 2028
                                 </div>
                                 <div className="text-sm text-green-600 dark:text-green-400 font-semibold">
-                                    {goalProgress < 100 ? `KES ${(200000 - portfolioValue).toLocaleString()} to go` : 'Goal achieved! 🎉'}
+                                    {goalProgress < 100 ? `Ksh. ${(220000 - portfolioValue).toLocaleString()} to go` : 'Goal achieved! 🎉'}
                                 </div>
                             </div>
 

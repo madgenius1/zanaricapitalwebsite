@@ -10,11 +10,11 @@ export default function HeroLearn() {
                     <h1 className="text-4xl md:text-5xl font-bold">
                         Master the Markets — From{" "}
                         <span className="text-blue-600 dark:text-blue-600">
-                            KES 100
+                            Ksh. 100
                         </span>{" "}
                         to{" "}
                         <span className="text-blue-600 dark:text-blue-600">
-                            KES 100 Million
+                            Ksh. 100 Million
                         </span>
                     </h1>
 
