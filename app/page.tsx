@@ -6,7 +6,7 @@ import Rafiki from "./components/landing/Rafiki";
 import Solution from "./components/landing/Solution";
 import SellingPoints from "./components/landing/SellingPoints";
 import FAQs from "./components/landing/FAQs";
-import ProblemSolution from "./components/ui/features/ProblemSolution";
+import ProblemSolution from "./components/landing/ProblemSolution";
 
 export default function Page() {
   return (

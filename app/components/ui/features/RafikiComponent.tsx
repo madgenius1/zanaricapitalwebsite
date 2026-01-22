@@ -1,5 +1,5 @@
 
-
+//Shift this to the Rafiki AI PAGE
 export default function RafikiComponent() {
     const points = [
         "Explains your investment choices in plain language",

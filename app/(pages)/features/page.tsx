@@ -6,9 +6,10 @@ import Payments from "@/app/components/ui/features/Payments";
 import Portfolio from "@/app/components/ui/features/Portfolio";
 import Security from "@/app/components/ui/features/Security";
 import Education from "@/app/components/ui/features/Education";
-import RafikiComponent from "@/app/components/ui/features/RafikiComponent";
+// import RafikiComponent from "@/app/components/ui/features/RafikiComponent";
 
 
+//Shift Rafiki AI to the Rafiki AI PAGE
 
 export default function Page() {
     return (
@@ -17,7 +18,7 @@ export default function Page() {
             <Onboarding />
             <MarketingAccess />
             <Payments />
-            <RafikiComponent />
+            {/* <RafikiComponent /> */}
             <Education />
             <Portfolio />
             <Security />

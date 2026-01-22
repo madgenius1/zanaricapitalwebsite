@@ -23,15 +23,29 @@ const problems = [
 
 export default function ProblemSolution() {
     return (
-        <section className="relative w-full py-20 bg-gray-100 dark:bg-gray-900 overflow-hidden">
-            <div className="relative max-w-7xl mx-auto px-4">
-                {/* Title */}
-                <div className="text-center max-w-3xl mx-auto mb-16">
+        <section className="py-8 lg:py-24 bg-gray-100 dark:bg-gray-900">
+            <div className=" max-w-7xl mx-auto px-4">
+                {/* Header */}
+                <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div className="max-w-4xl space-y-2">
+                        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white gap-2">
+                            Investing In Kenya <br /> Shouldn&apos;t be complicated.
+                        </h2>
+                        {/* <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
+                            Buy and sell shares in the Nairobi Securities Exchange, Secondary Bonds, access ETFs, and learn about investing
+                            through a world-class mobile app.
+                        </p> */}
+                    </div>
+                </div>
+
+                {/* Title 
+                <div className="text-start max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
                         Investing in Kenya shouldn&apos;t be complicated.
                     </h2>
                 </div>
-
+                */}
+                
                 {/* Problems Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {problems.map((problem, index) => (
