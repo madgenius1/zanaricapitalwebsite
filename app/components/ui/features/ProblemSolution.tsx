@@ -23,7 +23,7 @@ const problems = [
 
 export default function ProblemSolution() {
     return (
-        <section className="relative w-full py-20 bg-white dark:bg-gray-950 overflow-hidden">
+        <section className="relative w-full py-20 bg-gray-100 dark:bg-gray-900 overflow-hidden">
             <div className="relative max-w-7xl mx-auto px-4">
                 {/* Title */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -37,7 +37,7 @@ export default function ProblemSolution() {
                     {problems.map((problem, index) => (
                         <div
                             key={index}
-                            className="rounded-2xl border border-red-100 dark:border-red-900/40 bg-white dark:bg-neutral-900 p-6 shadow-sm hover:shadow-md transition"
+                            className="rounded-2xl border border-red-100 dark:border-red-900/40 bg-white dark:bg-gray-800 p-6 shadow-sm hover:shadow-md transition"
                         >
                             <div className="flex items-center gap-3 mb-4">
                                 <HiOutlineXCircle className="h-6 w-6 text-red-600" />
@@ -45,7 +45,7 @@ export default function ProblemSolution() {
                                     {problem.title}
                                 </h3>
                             </div>
-                            <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                                 {problem.description}
                             </p>
                         </div>

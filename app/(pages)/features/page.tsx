@@ -6,9 +6,7 @@ import Payments from "@/app/components/ui/features/Payments";
 import Portfolio from "@/app/components/ui/features/Portfolio";
 import ProblemSolution from "@/app/components/ui/features/ProblemSolution";
 import Security from "@/app/components/ui/features/Security";
-import Simplicity from '../../components/ui/features/Simplicity';
 import Education from "@/app/components/ui/features/Education";
-
 
 
 
@@ -20,7 +18,6 @@ export default function Page() {
             <Onboarding />
             <MarketingAccess />
             <Payments />
-            <Simplicity />
             <Education />
             <Portfolio />
             <Security />

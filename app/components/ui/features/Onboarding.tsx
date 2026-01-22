@@ -6,12 +6,12 @@ export default function Onboarding() {
     const screens = [
         {
             src: "/onboarding-signup.png",
-            alt: "Sign up with your phone number",
+            alt: "Create and Verify Account",
             label: "Quick signup",
         },
         {
             src: "/onboarding-mpesa.png",
-            alt: "Deposit instantly via M-Pesa",
+            alt: "Deposit Funds",
             label: "Instant M-Pesa deposit",
         },
         {
@@ -19,12 +19,16 @@ export default function Onboarding() {
             alt: "Buy your first stock",
             label: "First investment",
         },
+        {
+            src: "/portfolio-growth.png",
+            alt: "Continue ivesting and diversify portfolio",
+            label: "Portfolio growth",
+        },
     ];
 
     return (
-        <section className="w-full py-20 bg-white">
+        <section className="w-full py-20 bg-gray-50 dark:bg-gray-950">
             <div className="max-w-7xl mx-auto px-4 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
                 {/* LEFT: VISUAL */}
                 <div className="relative overflow-hidden">
                     <div className="flex gap-6 animate-onboarding-scroll">
