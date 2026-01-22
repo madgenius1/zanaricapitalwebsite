@@ -72,10 +72,10 @@ export default function Navbar() {
                         }`}
                 >
                     <ul className="flex flex-col p-6 space-y-2">
-                        {['Features', 'About Us', 'Learn', 'Beta', 'Contact Us', 'Privacy Policy'].map((item) => (
+                        {['Features','Rafiki AI', 'Beta', 'Learn', 'About Us', 'Contact Us', 'Privacy Policy'].map((item) => (
                             <li key={item}>
                                 <Link
-                                    href={`/${item.toLowerCase().replace(' ', '')}`}
+                                    href={`/${item.replace(' ', '')}`}
                                     className="block px-4 py-3 text-lg font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >

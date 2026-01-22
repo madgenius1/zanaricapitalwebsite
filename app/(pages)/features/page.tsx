@@ -5,7 +5,7 @@ import Onboarding from "@/app/components/ui/features/Onboarding";
 import Payments from "@/app/components/ui/features/Payments";
 import Portfolio from "@/app/components/ui/features/Portfolio";
 import Security from "@/app/components/ui/features/Security";
-import Education from "@/app/components/ui/features/Education";
+// import Education from "@/app/components/ui/features/Education";
 // import RafikiComponent from "@/app/components/ui/features/RafikiComponent";
 
 
@@ -19,7 +19,7 @@ export default function Page() {
             <MarketingAccess />
             <Payments />
             {/* <RafikiComponent /> */}
-            <Education />
+            {/* <Education /> */}
             <Portfolio />
             <Security />
             <FooterFeatures />

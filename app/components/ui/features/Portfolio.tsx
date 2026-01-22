@@ -143,7 +143,7 @@ export default function Portfolio() {
                                     Target by Dec 2028
                                 </div>
                                 <div className="text-sm text-green-600 dark:text-green-400 font-semibold">
-                                    {goalProgress < 100 ? `Ksh. ${(220000 - portfolioValue).toLocaleString()} to go` : 'Goal achieved! 🎉'}
+                                    {goalProgress < 100 ? `Ksh. ${(220000 - portfolioValue).toLocaleString()} to go` : 'Goal achieved!'}
                                 </div>
                             </div>
 
