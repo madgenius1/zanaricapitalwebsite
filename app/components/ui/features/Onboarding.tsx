@@ -37,7 +37,7 @@ export default function Onboarding() {
     }, [screens.length]);
 
     return (
-        <section className="w-full py-20 bg-white dark:bg-gray-950">
+        <section className="w-full py-20 bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* LEFT: VISUAL CAROUSEL */}
                 <div className="relative">
@@ -52,7 +52,7 @@ export default function Onboarding() {
                                     className="min-w-full flex justify-center px-4"
                                 >
                                     <div className="w-full max-w-[320px] rounded-2xl bg-gray-50 dark:bg-gray-900 shadow-xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-                                        <div className="aspect-[9/16] relative bg-white dark:bg-gray-950">
+                                        <div className="aspect-9/16 relative bg-white dark:bg-gray-950">
                                             <img
                                                 src={screen.src}
                                                 alt={screen.alt}
@@ -119,25 +119,25 @@ export default function Onboarding() {
 
                     <ul className="mt-8 space-y-4">
                         <li className="flex items-start gap-3">
-                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white flex-shrink-0" />
+                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white shrink-0" />
                             <span className="text-gray-700 dark:text-gray-300">
                                 Sign up with your phone number
                             </span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white flex-shrink-0" />
+                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white shrink-0" />
                             <span className="text-gray-700 dark:text-gray-300">
                                 Deposit instantly via M-Pesa
                             </span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white flex-shrink-0" />
+                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white shrink-0" />
                             <span className="text-gray-700 dark:text-gray-300">
                                 Start with small amounts
                             </span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white flex-shrink-0" />
+                            <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white shrink-0" />
                             <span className="text-gray-700 dark:text-gray-300">
                                 No paperwork confusion
                             </span>
