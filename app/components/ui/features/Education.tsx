@@ -32,7 +32,7 @@ export default function Education() {
                     </h2>
 
                     <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-lg">
-                        Zanari teaches you in context — right when you’re making
+                        Zanari teaches you in context — right when you&apos;re making
                         decisions — so learning feels natural, not overwhelming.
                     </p>
 
