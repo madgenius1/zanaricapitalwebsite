@@ -5,6 +5,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { HiOutlineMenuAlt4, HiOutlineX } from "react-icons/hi";
 
+const navItems = [
+    { slug: 'features', label: 'Features' },
+    { slug: 'rafiki', label: 'Rafiki' },
+    { slug: 'beta', label: 'Beta' },
+    { slug: 'learn', label: 'Learn' },
+    { slug: 'about', label: 'About' },
+    { slug: 'contact', label: 'Contact' },
+    { slug: 'privacy', label: 'Privacy Policy' },
+];
+
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
@@ -72,14 +82,14 @@ export default function Navbar() {
                         }`}
                 >
                     <ul className="flex flex-col p-6 space-y-2">
-                        {['Features','Rafiki AI', 'Beta', 'Learn', 'About Us', 'Contact Us', 'Privacy Policy'].map((item) => (
-                            <li key={item}>
+                        {navItems.map(({ slug, label }) => (
+                            <li key={slug}>
                                 <Link
-                                    href={`/${item.replace(' ', '')}`}
+                                    href={`/${slug}`}
                                     className="block px-4 py-3 text-lg font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    {item}
+                                    {label}
                                 </Link>
                             </li>
                         ))}

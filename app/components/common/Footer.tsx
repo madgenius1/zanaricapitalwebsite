@@ -18,7 +18,7 @@ const FOOTER_LINKS = {
         { name: "Learn", href: "/learn" },
     ],
     Resources: [
-        { name: "Stocks", href: "/help" },
+        { name: "Stocks", href: "/stocks" },
         { name: "ETFs", href: "/etfs" },
         { name: "Bonds", href: "/bonds" },
         { name: "Portfolio", href: "/portfolio" },

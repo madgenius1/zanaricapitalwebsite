@@ -45,11 +45,11 @@ export default function Portfolio() {
     const goalProgress = Math.floor(scrollProgress * 100); // 0% to 100%
 
     return (
-        <section className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <section className="py-8 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
 
             <div className="max-w-7xl mx-auto px-4 lg:px-12 z-10 flex flex-col gap-8">
                 {/* HEADER */}
-                <div className="space-y-8 text-center py-4 mb-8">
+                <div className="space-y-8 text-center py-4">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
                         See your diversified portfolio grow.
                     </h2>
@@ -96,7 +96,7 @@ export default function Portfolio() {
                     {/* Goal Progress Section */}
                     <div className="p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
                         <div className="text-sm text-gray-600 dark:text-gray-400 mb-6">Investment Goal Progress</div>
-
+                        {/* Make the portfolio edited to have different stocks and assets */}
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                             {/* Progress Ring */}
                             <div className="flex flex-col items-center justify-center">
