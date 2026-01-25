@@ -1,13 +1,22 @@
+import AboutCTA from "@/app/components/ui/about/AboutCTA";
+import AboutHero from "@/app/components/ui/about/AboutHero";
+import AboutMission from "@/app/components/ui/about/AboutMission";
+import AboutPrinciples from "@/app/components/ui/about/AboutPrinciples";
+import AboutSocialProof from "@/app/components/ui/about/AboutSocialProof";
+import AboutTeam from "@/app/components/ui/about/AboutTeam";
+import AboutVision from "@/app/components/ui/about/AboutVision";
 
 
 export default function Page() {
     return(
-        <main className="bg-gray-50 dark:bg-gray-800">
-            <div className="min-h-screen flex justify-center py-12 px-12 items-center">
-                <h1 className="text-gray-950 dark:text-gray-50 text-md">
-                    About Page
-                </h1>
-            </div>
-        </main>
+        <>
+            <AboutHero />
+            <AboutMission />
+            <AboutVision />
+            <AboutPrinciples />
+            <AboutTeam />
+            <AboutSocialProof />
+            <AboutCTA />
+        </>
     )
 }

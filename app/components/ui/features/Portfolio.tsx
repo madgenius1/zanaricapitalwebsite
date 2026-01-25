@@ -20,8 +20,8 @@ export default function Portfolio() {
 
             // Start animation when card enters bottom of viewport
             // Complete when card is centered in viewport
-            const start = windowHeight;
-            const end = windowHeight / 3 - cardHeight / 3;
+            const start = windowHeight / 1.5;
+            const end = windowHeight / 2 - cardHeight / 2;
 
             if (cardTop <= start && cardTop >= end) {
                 const progress = (start - cardTop) / (start - end);
@@ -40,7 +40,7 @@ export default function Portfolio() {
     }, []);
 
     // Animated values based on scroll progress
-    const portfolioValue = Math.floor(40000 + (scrollProgress * 180000));
+    const portfolioValue = Math.floor(30000 + (scrollProgress * 210000));
     const percentGain = (scrollProgress * 300).toFixed(1); // 0% to 300%
     const goalProgress = Math.floor(scrollProgress * 100); // 0% to 100%
 
@@ -49,8 +49,8 @@ export default function Portfolio() {
 
             <div className="max-w-7xl mx-auto px-4 lg:px-12 z-10 flex flex-col gap-8">
                 {/* HEADER */}
-                <div className="space-y-8 text-center py-4">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
+                <div className="space-y-4 text-center py-4">
+                    <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white">
                         See your diversified portfolio grow.
                     </h2>
                 </div>
@@ -137,13 +137,13 @@ export default function Portfolio() {
                             {/* Goal Details */}
                             <div className="flex flex-col justify-center">
                                 <div className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Ksh 220,000
+                                    Ksh 240,000
                                 </div>
                                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                                     Target by Dec 2028
                                 </div>
                                 <div className="text-sm text-green-600 dark:text-green-400 font-semibold">
-                                    {goalProgress < 100 ? `Ksh. ${(220000 - portfolioValue).toLocaleString()} to go` : 'Goal achieved!'}
+                                    {goalProgress < 100 ? `Ksh. ${(240000 - portfolioValue).toLocaleString()} to go` : 'Goal achieved!'}
                                 </div>
                             </div>
 
