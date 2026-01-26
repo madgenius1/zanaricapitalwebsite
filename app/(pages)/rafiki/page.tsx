@@ -1,13 +1,22 @@
+import RafikiDoes from "@/app/components/ui/rafiki/RafikiDoes";
+import RafikiHero from "@/app/components/ui/rafiki/RafikiHero";
+import RafikiPurpose from "@/app/components/ui/rafiki/RafikiPurpose";
+// import RafikiWorks from "@/app/components/ui/rafiki/RafikiWorks";
+import RafikiAdvantage from "@/app/components/ui/rafiki/RafikiAdvantage";
+// import RafikiDisclaimer from "@/app/components/ui/rafiki/RafikiDisclaimer";
+
+
 
 
 export default function Page() {
-    return(
-        <main className="bg-gray-50 dark:bg-gray-800">
-            <div className="min-h-screen flex justify-center py-12 px-12 items-center">
-                <h1 className="text-gray-950 dark:text-gray-50 text-md">
-                    Rafiki AI Page
-                </h1>
-            </div>
-        </main>
+    return (
+        <>
+            <RafikiHero />
+            <RafikiAdvantage />
+            <RafikiPurpose />
+            <RafikiDoes />
+            {/* <RafikiWorks /> */}
+            {/* <RafikiDisclaimer /> */}
+        </>
     )
 }
