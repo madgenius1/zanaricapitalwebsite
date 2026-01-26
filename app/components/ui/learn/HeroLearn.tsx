@@ -8,28 +8,23 @@ export default function HeroLearn() {
                 {/* Text */}
                 <div>
                     <h1 className="text-4xl md:text-5xl font-bold">
-                        Master the Markets — From{" "}
+                        Master the Capital Markets:{" "}
                         <span className="text-blue-600 dark:text-blue-600">
-                            Ksh. 100
-                        </span>{" "}
-                        to{" "}
+                            Equities
+                        </span>,{" "}
+                        Fixed Income & {" "}
                         <span className="text-blue-600 dark:text-blue-600">
-                            Ksh. 100 Million
+                            Alternative Investments
                         </span>
                     </h1>
 
                     <p className="mt-6 text-lg text-gray-700 dark:text-gray-300">
-                        Zanari Academy is your free learning hub for understanding the
-                        Nairobi Securities Exchange, ETFs, and investments — explained
-                        simply, responsibly, and without hype.
+                        Zanari Academy is your learning hub for understanding Investment Products; Stocks, ETFs, Derivatives, REITS, Crypto, MMFs, and Special Funds.
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-4">
-                        <Link href="/beta" className="rounded-lg bg-blue-600 dark:text-gray-900 dark:bg-gray-100 text-white px-6 py-3 font-medium hover:bg-blue-800 dark:hover:bg-gray-200 cursor-pointer transition">
+                        <Link href="/beta" className="rounded-lg font-medium bg-blue-600 dark:text-gray-900 dark:bg-gray-100 text-white px-6 py-3 inline-flex hover:bg-blue-800 dark:hover:bg-gray-200 cursor-pointer transition">
                             Start Learning
-                        </Link>
-                        <Link href="/beta" className="rounded-lg border border-gray-300 dark:border-gray-700 px-6 py-3 font-medium hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer transition">
-                            Join the Waitlist
                         </Link>
                     </div>
                 </div>

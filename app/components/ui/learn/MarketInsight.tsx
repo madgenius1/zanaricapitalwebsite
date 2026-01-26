@@ -9,11 +9,12 @@ export default function MarketInsight() {
                 educational webinars — focused on understanding, not speculation.
             </p>
 
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                     "Weekly NSE Market Recaps",
                     "Global Market Explainers",
                     "Live Webinars & AMAs",
+                    "Rafiki Newsletter",
                 ].map((item) => (
                     <div
                         key={item}

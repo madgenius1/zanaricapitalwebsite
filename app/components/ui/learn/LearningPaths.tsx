@@ -11,15 +11,15 @@ export default function LearningPaths() {
                 </p>
             </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8">
                 {[
                     {
                         title: "Investing for Beginners",
                         desc: "Understand the basics of investing, risk, and how to start with small amounts.",
                         points: [
                             "What is investing?",
-                            "Risk vs reward",
-                            "Common beginner mistakes",
+                            "Understand investor profiles",
+                            "Equities, Fixed Income, and Alternatives",
                         ],
                     },
                     {
@@ -32,12 +32,21 @@ export default function LearningPaths() {
                         ],
                     },
                     {
-                        title: "Global Markets 101",
-                        desc: "Explore ETFs and international markets and how Kenyans can diversify globally.",
+                        title: "Understanding the Economy",
+                        desc: "Learn which investment is right for each Economic Cycle.",
                         points: [
-                            "What are ETFs?",
-                            "Currency risk",
-                            "Local vs global diversification",
+                            "Monetary and Fiscal Policies",
+                            "Business Cycles",
+                            "Kenyan Capital Markets",
+                        ],
+                    },
+                    {
+                        title: "Learn about Investment  Strategies",
+                        desc: "Explore local and global investment strategies.",
+                        points: [
+                            "Growth and Value Investing",
+                            "Dollar Cost Averaging",
+                            "Dividend Reinvestment Plan (DRIP)",
                         ],
                     },
                 ].map((path) => (
