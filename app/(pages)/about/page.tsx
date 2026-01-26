@@ -1,9 +1,11 @@
 import AboutCTA from "@/app/components/ui/about/AboutCTA";
+import AboutFounder from "@/app/components/ui/about/AboutFounder";
 import AboutHero from "@/app/components/ui/about/AboutHero";
 import AboutMission from "@/app/components/ui/about/AboutMission";
 import AboutPrinciples from "@/app/components/ui/about/AboutPrinciples";
-import AboutSocialProof from "@/app/components/ui/about/AboutSocialProof";
+import AboutPurpose from "@/app/components/ui/about/AboutPurpose";
 import AboutTeam from "@/app/components/ui/about/AboutTeam";
+import AboutValues from "@/app/components/ui/about/AboutValues";
 import AboutVision from "@/app/components/ui/about/AboutVision";
 
 
@@ -12,10 +14,12 @@ export default function Page() {
         <>
             <AboutHero />
             <AboutMission />
+            <AboutPurpose />
+            <AboutFounder />
+            <AboutValues />
             <AboutVision />
             <AboutPrinciples />
             <AboutTeam />
-            <AboutSocialProof />
             <AboutCTA />
         </>
     )

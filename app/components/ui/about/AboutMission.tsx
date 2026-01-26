@@ -1,41 +1,36 @@
+
+
+import Image from "next/image";
+
 export default function AboutMission() {
-    const beliefs = [
-        {
-            title: "Accessibility",
-            text: "Investing should be available to every Kenyan, not just a few.",
-        },
-        {
-            title: "Clarity",
-            text: "Simple explanations beat complicated jargon.",
-        },
-        {
-            title: "Ownership",
-            text: "Your assets should always be owned by you.",
-        },
-        {
-            title: "Trust",
-            text: "Security and transparency are non-negotiable.",
-        },
-    ];
-
     return (
-        <section className="py-24 bg-gray-50 dark:bg-gray-900">
-            <div className="max-w-7xl mx-auto px-4 lg:px-12">
-                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white">
-                    Why we exist
-                </h2>
-
-                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
-                    {beliefs.map((b) => (
-                        <div key={b.title}>
-                            <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-                                {b.title}
-                            </h3>
-                            <p className="mt-2 text-gray-600 dark:text-gray-400">
-                                {b.text}
-                            </p>
-                        </div>
-                    ))}
+        <section className="bg-black text-white py-24">
+            <div className="max-w-7xl mx-auto px-6 flex flex-col gap-6">
+                <div className="max-w-4xl">
+                    <h2 className="text-3xl md:text-4xl font-semibold">
+                        Investing shouldn&apos;t feel impossible.
+                    </h2>
+                    <p className="mt-4 text-gray-400">
+                        We started Zanari because investing in Kenya is still
+                        complex, intimidating, and inaccessible to many.
+                        Our goal is to remove friction — from onboarding to ownership.
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                    <Image
+                        src="/community.webp"
+                        alt="Community"
+                        width={400}
+                        height={300}
+                        className="rounded-xl object-cover"
+                    />
+                    <Image
+                        src="/hands.webp"
+                        alt="Trust"
+                        width={400}
+                        height={300}
+                        className="rounded-xl object-cover"
+                    />
                 </div>
             </div>
         </section>
