@@ -5,22 +5,22 @@ export default function AboutMission() {
     <section className="bg-white py-16 transition-colors duration-300 dark:bg-zinc-950 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-20">
-          
+
           {/* Left Column: Content */}
-          <div className="sticky top-10">            
+          <div className="sticky top-10">
             <h2 className="mt-6 text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
               Investing shouldn&apos;t feel <br className="hidden md:block" />
               like an impossible task.
             </h2>
-            
+
             <div className="mt-8 space-y-6 text-lg leading-8 text-zinc-600 dark:text-zinc-200">
               <p>
-                We started Zanari because investing in Kenya is still complex, 
-                intimidating, and inaccessible to many. The barriers aren&apos;t 
+                We started Zanari because investing in Kenya is still complex,
+                intimidating, and inaccessible to many. The barriers aren&apos;t
                 just financial—they are structural.
               </p>
               <p className="border-l-4 border-zinc-900 pl-6 font-medium italic dark:border-white">
-                "Our goal is to remove friction—from the moment you onboard to the 
+                "Our goal is to remove friction—from the moment you onboard to the
                 pride of ownership."
               </p>
             </div>
@@ -58,10 +58,14 @@ export default function AboutMission() {
                 className="h-48 w-full object-cover grayscale transition-all duration-500 hover:grayscale-0 sm:h-64"
               />
             </div>
-            <div className="col-span-5 flex items-center justify-center rounded-2xl bg-zinc-900 p-6 dark:bg-white">
-               <p className="text-center text-sm font-bold uppercase tracking-widest text-white dark:text-black">
-                 Zanari <br /> Capital
-               </p>
+            <div className="col-span-5 overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900">
+              <Image
+                src="/together.webp"
+                alt="Trust"
+                width={400}
+                height={400}
+                className="h-48 w-full object-cover grayscale transition-all duration-500 hover:grayscale-0 sm:h-64"
+              />
             </div>
           </div>
 
