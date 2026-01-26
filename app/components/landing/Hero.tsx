@@ -4,8 +4,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-950 min-h-screen flex items-center px-6 py-16 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
+    <section className="relative bg-gray-50 overflow-hidden dark:bg-gray-950 min-h-screen flex items-center px-6 py-16 transition-colors duration-300">
+      <div className="absolute inset-0 mask-[radial-gradient(ellipse_at_center,transparent_20%,black)]">
+        <div className="absolute inset-0 h-full w-full bg-inherit bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[40px_40px] dark:bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)]" />
+      </div>
+      <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
 
         {/* LEFT: Text Content */}
         <div className="flex flex-col lg:items-start items-center">

@@ -1,17 +1,26 @@
 export default function AboutHero() {
     return (
-        <section className="relative bg-black dark:bg-gray-950 text-white py-32 overflow-hidden">
-            <div className="absolute inset-0 bg-linear-to-b from-blue-900/40 via-black to-black" />
-
-            <div className="relative max-w-7xl mx-auto px-6 text-center">
-                <h1 className="text-4xl md:text-6xl font-semibold">
-                    About Zanari Capital
-                </h1>
-                <p className="mt-6 max-w-3xl mx-auto text-gray-300 text-lg">
-                    We&apos;re building a Kenyan-first investment platform that makes
-                    buying and owning real assets simple, transparent, and accessible.
-                </p>
+        <section className="relative overflow-hidden bg-white py-20 dark:bg-gray-950 sm:py-32">
+            {/* Structural Pattern: A subtle grid that works in both modes */}
+            <div className="absolute inset-0 mask-[radial-gradient(ellipse_at_center,transparent_20%,black)]">
+                <div className="absolute inset-0 h-full w-full bg-inherit bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[40px_40px] dark:bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)]" />
             </div>
+
+            <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-2xl text-center">
+                    <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-6xl">
+                        About Zanari Capital
+                    </h1>
+
+                    <p className="mt-8 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+                        We&apos;re building a Kenyan-first investment platform that makes
+                        buying and owning real assets <span className="text-zinc-900 dark:text-zinc-200 font-medium">simple, transparent, and accessible</span> for everyone.
+                    </p>
+                </div>
+            </div>
+
+            {/* Visual Accent: Simple solid line divider */}
+            <div className="absolute bottom-0 left-0 h-px w-full bg-zinc-200 dark:bg-zinc-800" />
         </section>
     );
 }
