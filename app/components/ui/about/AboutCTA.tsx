@@ -13,7 +13,7 @@ export default function AboutCTA() {
 
           <div className="relative z-10 mx-auto max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Ready to invest <br className="hidden sm:block" /> with confidence?
+              Ready to invest?
             </h2>
             
             <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-zinc-400">

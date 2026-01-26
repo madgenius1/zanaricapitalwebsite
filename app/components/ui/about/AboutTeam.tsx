@@ -2,6 +2,8 @@ const team = [
     { name: "Collins Murichu", role: "CEO & Co-Founder", initials: "CM" },
     { name: "Nick Juma", role: "CTO & Co-Founder", initials: "NJ" },
     { name: "Kevin Omwangi", role: "CPO", initials: "KO" },
+    { name: "Alpha Bravo", role: "CIO and Marketing", initials: "AB" },
+    
 ];
 
 export default function AboutTeam() {
@@ -20,7 +22,7 @@ export default function AboutTeam() {
                 </div>
 
                 {/* Team Grid */}
-                <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+                <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
                     {team.map((member) => (
                         <div key={member.name} className="group relative">
                             {/* Image Container with Solid Border Offset */}

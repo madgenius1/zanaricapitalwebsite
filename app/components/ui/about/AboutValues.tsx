@@ -1,8 +1,8 @@
 const values = [
     { title: "Transparency", text: "No hidden fees or complex jargon. We provide clear pricing and direct proof of ownership for every asset." },
     { title: "Security", text: "Your capital is protected by bank-grade encryption and rigorous legal frameworks compliant with local laws." },
-    { title: "Accessibility", text: "Wealth creation shouldn&apos;t be for the few. Start building your portfolio with accessible entry points." },
-    { title: "Education", text: "We don&apos;t just facilitate transactions; we provide the tools and insights to help you grow as an investor." },
+    { title: "Accessibility", text: "Wealth creation shouldn't be for the few. Start building your portfolio with accessible entry points." },
+    { title: "Education", text: "We don't just facilitate transactions; we provide the tools and insights to help you grow as an investor." },
 ];
 
 export default function AboutValues() {
