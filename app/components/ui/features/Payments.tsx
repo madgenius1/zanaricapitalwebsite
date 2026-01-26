@@ -5,7 +5,7 @@ import { FiCheck, FiArrowRight, FiCreditCard, FiTrendingUp } from "react-icons/f
 
 export default function Payments() {
     const [activeStep, setActiveStep] = useState(0);
-    const steps = ["M-Pesa", "Zanari", "NSE", "Portfolio"];
+    const steps = ["Deposit", "Zanari", "NSE", "Portfolio"];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,7 +18,7 @@ export default function Payments() {
     const features = [
         { icon: <FiCreditCard />, text: "Instant funds deposits", sub: "STK Push integration" },
         { icon: <FiCheck />, text: "Clear trade execution", sub: "Real-time settlement" },
-        { icon: <FiTrendingUp />, text: "Fast withdrawals", sub: "Direct to M-Pesa" },
+        { icon: <FiTrendingUp />, text: "Fast withdrawals", sub: "Direct to your mobile or bank" },
     ];
 
     return (
@@ -88,7 +88,7 @@ export default function Payments() {
                                             {step}
                                         </div>
                                         <div className={`text-xs mt-1 font-medium transition-opacity duration-500 ${activeStep === index ? "text-green-600 opacity-100" : "opacity-0"}`}>
-                                            {index === 0 && "Securely STK Push initiated"}
+                                            {index === 0 && "Secure STK Push initiated"}
                                             {index === 1 && "Verifying transaction"}
                                             {index === 2 && "Buying shares on NSE"}
                                             {index === 3 && "Portfolio value updated"}

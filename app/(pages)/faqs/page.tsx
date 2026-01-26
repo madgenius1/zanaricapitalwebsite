@@ -36,7 +36,7 @@ const accordionItems: AccordionItem[] = [
     },
     {
         title: "What markets will be available at launch?",
-        description: "We plan to launch with selected Nairobi Securities Exchange (NSE) stocks, with global market access introduced progressively through regulated partners.",
+        description: "We plan to launch with selected Nairobi Securities Exchange (NSE) stocks, with African and global market access introduced progressively through regulated partners.",
     },
     {
         title: "Can I invest with small amounts?",
@@ -48,7 +48,7 @@ const accordionItems: AccordionItem[] = [
     },
     {
         title: "Is my money safe?",
-        description: "Client funds and securities will be held and processed through regulated custodial and brokerage partners. Zanari Capital does not directly hold customer deposits.",
+        description: "Client funds and securities will be held and processed through regulated custodial partners. Zanari Capital does not directly hold customer deposits.",
     },
     {
         title: "How is my personal data protected?",

@@ -10,7 +10,7 @@ export default function Onboarding() {
             label: "Quick signup",
         },
         {
-            src: "/onboarding-mpesa.png",
+            src: "/onboarding.png",
             alt: "Deposit Funds",
             label: "Instant  deposit",
         },
@@ -127,7 +127,7 @@ export default function Onboarding() {
                         <li className="flex items-start gap-3">
                             <span className="mt-2 h-2 w-2 rounded-full bg-black dark:bg-white shrink-0" />
                             <span className="text-gray-700 dark:text-gray-300">
-                                Deposit instantly via M-Pesa
+                                Deposit instantly to your wallet
                             </span>
                         </li>
                         <li className="flex items-start gap-3">
