@@ -55,7 +55,7 @@ const PRODUCTS: Product[] = [
         icon: HiMiniArrowTrendingUp,
     },
     {
-        id: "analytics",
+        id: "portfolio",
         category: "Insights",
         title: "Portfolio Analytics",
         description: "Breakdown and Track your performance and get real time market exposure for your portfolio.",

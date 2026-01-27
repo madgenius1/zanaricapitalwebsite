@@ -8,6 +8,7 @@ import {
     HiOutlineShieldCheck,
     HiOutlineChartBar,
     HiOutlineDocumentText,
+    HiOutlineTemplate,
     HiChevronRight
 } from 'react-icons/hi';
 
@@ -55,7 +56,7 @@ const VALUE_PROPS: ValueProp[] = [
         desc: "Protect your original investment while outperforming inflation."
     },
     {
-        icon: <HiOutlineChartBar className="text-purple-500" size={28} />,
+        icon: <HiOutlineTemplate className="text-purple-500" size={28} />,
         title: "Diversification",
         desc: "Balance your stock portfolio with the stability of debt assets."
     }
@@ -66,17 +67,17 @@ export default function Page() {
         <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-blue-100">
 
             {/* Hero: SEO Target - Secondary bond market in Kenya */}
-            <section className="py-24 px-6 relative overflow-hidden justify-start">
+            <section className="py-24 px-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-                <div className="max-w-4xl mx-auto ">
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6">
                         Invest for <span className="text-blue-600">stability</span> <br />
                         with bonds.
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto mb-10">
                         Lend to the government or institutions and earn a predictable, fixed return on your capital.
                     </p>
-                    
+
                 </div>
             </section>
 
@@ -132,9 +133,6 @@ export default function Page() {
                                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
                                     {bond.description}
                                 </p>
-                                <Link href="/beta" className="text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-                                    Explore Market <HiChevronRight />
-                                </Link>
                             </div>
                         ))}
                     </div>
@@ -163,7 +161,7 @@ export default function Page() {
             <section className="py-20 px-6">
                 <div className="max-w-4xl mx-auto bg-blue-600 rounded-[2.5rem] p-10 md:p-16 text-center text-white relative overflow-hidden">
                     <div className="absolute inset-0 bg-white/5 opacity-50" />
-                    <h2 className="text-3xl md:text-4xl font-bold mb-8 relative z-10">Zanari makes bonds simple.</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-8 relative z-10">Zanari makes bonds much simpler.</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 relative z-10">
                         <div className="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
                             <HiOutlineDocumentText className="mx-auto mb-2" size={24} />
@@ -179,7 +177,7 @@ export default function Page() {
                         </div>
                     </div>
                     <Link href="/beta">
-                        <button className="bg-white text-blue-600 px-10 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-slate-100 transition-all relative z-10">
+                        <button className="bg-white text-blue-600 px-10 py-4 cursor-pointer rounded-xl font-semibold text-sm tracking-wider hover:bg-slate-100 transition-all relative z-10">
                             Get Started
                         </button>
                     </Link>
