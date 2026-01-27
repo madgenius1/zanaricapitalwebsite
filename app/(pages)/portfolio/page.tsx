@@ -30,10 +30,10 @@ interface RafikiSkill {
 }
 
 const ASSETS: AssetClass[] = [
-    { name: 'Stocks', role: 'Growth', color: 'bg-blue-600', percentage: 60, value: 'KES 744,300' },
-    { name: 'ETFs', role: 'Global', color: 'bg-cyan-500', percentage: 20, value: 'KES 248,100' },
-    { name: 'Bonds', role: 'Stability', color: 'bg-emerald-500', percentage: 15, value: 'KES 186,075' },
-    { name: 'Dividends', role: 'Liquidity', color: 'bg-slate-400', percentage: 5, value: 'KES 62,025' },
+    { name: 'Stocks', role: 'Growth', color: 'bg-blue-600', percentage: 60, value: 'Ksh. 744,300' },
+    { name: 'ETFs', role: 'Global', color: 'bg-cyan-500', percentage: 20, value: 'Ksh. 248,100' },
+    { name: 'Bonds', role: 'Stability', color: 'bg-emerald-500', percentage: 15, value: 'Ksh. 186,075' },
+    { name: 'Dividends', role: 'Liquidity', color: 'bg-gray-400', percentage: 5, value: 'Ksh. 62,025' },
 ];
 
 const RAFIKI_SKILLS: RafikiSkill[] = [
@@ -56,20 +56,18 @@ const RAFIKI_SKILLS: RafikiSkill[] = [
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+        <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
 
             {/* Hero Section */}
-            <section className="pt-20 pb-12 px-6 max-w-7xl mx-auto border-b border-slate-100 dark:border-slate-900">
-                <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-                    <div className="max-w-2xl">
-                        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-                            See your entire <br />
-                            investment picture.
-                        </h1>
-                        <p className="text-lg text-slate-500 dark:text-slate-400 font-medium">
-                            Zanari enables you to grow and manage a diversified portfolio across Kenyan and Global markets—all guided by Rafiki AI.
-                        </p>
-                    </div>
+            <section className="pt-20 pb-12 px-6 max-w-7xl mx-auto border-b border-gray-100 dark:border-gray-900">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                        See your entire <br />
+                        <span className="text-blue-600">investment</span> picture.
+                    </h1>
+                    <p className="text-lg text-gray-700 dark:text-gray-300 max-w-xl mx-auto mb-10">
+                        Zanari enables you to grow and manage a diversified portfolio across Kenyan and Global markets—all guided by Rafiki AI.
+                    </p>
                 </div>
             </section>
 
@@ -78,11 +76,11 @@ export default function Page() {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 
                     {/* Portfolio Overview Card */}
-                    <div className="md:col-span-8 bg-slate-50 dark:bg-slate-900 rounded-4xl p-8 border border-slate-200 dark:border-slate-800">
+                    <div className="md:col-span-8 bg-gray-50 dark:bg-gray-900 rounded-4xl p-8 border border-gray-200 dark:border-gray-800">
                         <div className="flex justify-between items-start mb-12">
                             <div>
-                                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Portfolio Tracking</p>
-                                <h2 className="text-4xl font-black">KES 1,618,420</h2>
+                                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Portfolio Tracking</p>
+                                <h2 className="text-4xl font-black">Ksh. 1,618,420</h2>
                             </div>
                             <div className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-3 py-1 rounded-lg text-sm font-bold">
                                 +12.4%
@@ -99,13 +97,13 @@ export default function Page() {
 
                             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                                 {ASSETS.map((asset) => (
-                                    <div key={asset.name} className="p-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                    <div key={asset.name} className="p-4 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
                                         <div className="flex items-center gap-2 mb-2">
                                             <div className={`w-3 h-3 rounded-full ${asset.color}`} />
                                             <span className="font-bold text-sm">{asset.name}</span>
                                         </div>
                                         <p className="text-lg font-black">{asset.value}</p>
-                                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">{asset.role}</p>
+                                        <p className="text-[10px] text-gray-400 font-bold uppercase tracking-tighter">{asset.role}</p>
                                     </div>
                                 ))}
                             </div>
@@ -113,7 +111,7 @@ export default function Page() {
                     </div>
 
                     {/* Rafiki AI Insight Card */}
-                    <div className="md:col-span-4 bg-slate-900 dark:bg-blue-900/20 rounded-4xl p-8 text-white flex flex-col justify-between border border-slate-800 dark:border-blue-800/50">
+                    <div className="md:col-span-4 bg-gray-900 dark:bg-blue-900/20 rounded-4xl p-8 text-white flex flex-col justify-between border border-gray-800 dark:border-blue-800/50">
                         <div>
                             <div className="flex items-center gap-2 text-emerald-400 mb-6">
                                 <HiOutlineSparkles size={24} />
@@ -127,7 +125,7 @@ export default function Page() {
                     </div>
 
                     {/* Diversification Deep-Dive */}
-                    <div className="md:col-span-12 lg:col-span-7 bg-white dark:bg-slate-950 rounded-4xl p-10 border border-slate-200 dark:border-slate-800">
+                    <div className="md:col-span-12 lg:col-span-7 bg-white dark:bg-gray-950 rounded-4xl p-10 border border-gray-200 dark:border-gray-800">
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <HiOutlineChartPie className="text-blue-600" />
                             The Essence of Diversification
@@ -140,7 +138,7 @@ export default function Page() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-sm">Cross-Asset Management</h4>
-                                        <p className="text-xs text-slate-500 mt-1 leading-relaxed">Combine high-growth Kenyan stocks with stable Treasury bonds to create a resilient wealth foundation.</p>
+                                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">Combine high-growth Kenyan stocks with stable Treasury bonds to create a resilient wealth foundation.</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -149,16 +147,16 @@ export default function Page() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-sm">Currency Diversification</h4>
-                                        <p className="text-xs text-slate-500 mt-1 leading-relaxed">Access US-denominated ETFs to protect your purchasing power against local currency fluctuations.</p>
+                                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">Access US-denominated ETFs to protect your purchasing power against local currency fluctuations.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800">
-                                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4">Risk Exposure Assessment</p>
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                                <p className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-4">Risk Exposure Assessment</p>
                                 <div className="space-y-4">
                                     {['Market Risk', 'Inflation Risk', 'Liquidity'].map((risk, i) => (
                                         <div key={risk} className="flex items-center gap-3">
-                                            <div className={`h-1.5 flex-1 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden`}>
+                                            <div className={`h-1.5 flex-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden`}>
                                                 <div className={`h-full ${i === 0 ? 'w-3/4 bg-blue-600' : 'w-1/4 bg-emerald-500'} rounded-full`} />
                                             </div>
                                             <span className="text-[10px] font-bold w-20">{risk}</span>
@@ -170,24 +168,24 @@ export default function Page() {
                     </div>
 
                     {/* Goal Tracking Card */}
-                    <div className="md:col-span-12 lg:col-span-5 bg-slate-50 dark:bg-slate-900 rounded-4xl p-10 border border-slate-200 dark:border-slate-800">
+                    <div className="md:col-span-12 lg:col-span-5 bg-gray-50 dark:bg-gray-900 rounded-4xl p-10 border border-gray-200 dark:border-gray-800">
                         <h3 className="text-2xl font-bold mb-6">Wealth Goals</h3>
                         <div className="space-y-6">
-                            <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700">
+                            <div className="p-4 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
                                 <div className="flex justify-between items-center mb-2">
                                     <span className="font-bold text-sm">Retirement Fund</span>
                                     <span className="text-xs font-bold text-blue-600">42%</span>
                                 </div>
-                                <div className="h-2 w-full bg-slate-100 dark:bg-slate-700 rounded-full">
+                                <div className="h-2 w-full bg-gray-100 dark:bg-gray-700 rounded-full">
                                     <div className="h-full w-[42%] bg-blue-600 rounded-full" />
                                 </div>
                             </div>
-                            <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700">
+                            <div className="p-4 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
                                 <div className="flex justify-between items-center mb-2">
                                     <span className="font-bold text-sm">Children's Education</span>
                                     <span className="text-xs font-bold text-emerald-600">18%</span>
                                 </div>
-                                <div className="h-2 w-full bg-slate-100 dark:bg-slate-700 rounded-full">
+                                <div className="h-2 w-full bg-gray-100 dark:bg-gray-700 rounded-full">
                                     <div className="h-full w-[18%] bg-emerald-500 rounded-full" />
                                 </div>
                             </div>
@@ -198,16 +196,16 @@ export default function Page() {
             </section>
 
             {/* Rafiki Skills Section */}
-            <section className="py-20 px-6 max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-900">
+            <section className="py-20 px-6 max-w-7xl mx-auto border-t border-gray-100 dark:border-gray-900">
                 <h2 className="text-3xl font-bold mb-12 text-center">Intelligent Management</h2>
                 <div className="grid md:grid-cols-3 gap-12">
                     {RAFIKI_SKILLS.map((skill, i) => (
                         <div key={i} className="text-center md:text-left flex flex-col items-center md:items-start">
-                            <div className="w-14 h-14 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 dark:border-slate-800 mb-6">
+                            <div className="w-14 h-14 bg-white dark:bg-gray-900 rounded-2xl flex items-center justify-center shadow-sm border border-gray-100 dark:border-gray-800 mb-6">
                                 {skill.icon}
                             </div>
                             <h4 className="font-black text-lg mb-3">{skill.title}</h4>
-                            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
                                 {skill.desc}
                             </p>
                         </div>
@@ -216,8 +214,8 @@ export default function Page() {
             </section>
 
             {/* SEO Footer Disclaimer 
-            <footer className="py-20 px-6 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 text-center">
-                <p className="text-[10px] text-slate-400 max-w-3xl mx-auto uppercase tracking-tighter leading-relaxed">
+            <footer className="py-20 px-6 bg-gray-50 dark:bg-gray-900/50 border-t border-gray-200 dark:border-gray-800 text-center">
+                <p className="text-[10px] text-gray-400 max-w-3xl mx-auto uppercase tracking-tighter leading-relaxed">
                     Zanari Wealth provides investment portfolio tracking and management tools for users in Kenya.
                     Diversification across stocks, ETFs, and bonds helps manage market risk but does not guarantee profit.
                     Rafiki AI insights are for informational purposes. Track investments effectively to secure your financial future.
