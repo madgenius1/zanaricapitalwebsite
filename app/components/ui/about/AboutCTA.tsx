@@ -1,48 +1,76 @@
 import Link from "next/link";
+import {
+  FaHandshake ,
+} from 'react-icons/fa';
+
+interface RoadmapStep {
+    status: 'done' | 'active' | 'future';
+    title: string;
+    desc: string;
+}
+const ROADMAP: RoadmapStep[] = [
+    { status: 'active', title: "CMA Validation", desc: "Sandbox testing and compliance verification." },
+    { status: 'future', title: "Closed Beta", desc: "Iterative rollout to waitlist users." },
+    { status: 'future', title: "Public Scale", desc: "Mass adoption and ecosystem expansion." }
+];
 
 export default function AboutCTA() {
   return (
-    <section className="bg-white px-6 py-20 transition-colors duration-300 dark:bg-zinc-950 sm:py-32">
-      <div className="mx-auto max-w-5xl">
-        {/* Main CTA Container - Solid borders and flat colors instead of gradients */}
-        <div className="relative overflow-hidden border-2 border-zinc-900 bg-zinc-900 px-8 py-16 text-center dark:border-zinc-800 dark:bg-zinc-900/50 sm:rounded-3xl sm:px-16">
-          
-          {/* Subtle background decoration using solid shapes */}
-          <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-zinc-800 dark:bg-zinc-800/50" aria-hidden="true" />
-          <div className="absolute -bottom-8 -left-8 h-24 w-24 border-4 border-zinc-800 dark:border-zinc-800/50" aria-hidden="true" />
+    <>
+      <section className="py-24 px-6 bg-gray-950 text-white overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600/5 -skew-x-12 trangray-x-1/2" />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-3xl mb-16">
+            <h2 className="text-4xl font-bold mb-6">Zanari is at the inflection point between concept and scale.</h2>
+            <p className="text-gray-300 text-lg">We are intentionally building compliantly to establish long-term trust.</p>
+          </div>
 
-          <div className="relative z-10 mx-auto max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Ready to invest?
-            </h2>
-            
-            <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-zinc-400">
-              Join the <span className="text-white font-medium">Zanari beta</span> and help us shape an investment platform built specifically for the Kenyan market.
-            </p>
-
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link 
-                href="/beta" 
-                className="w-full rounded-md bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-zinc-950 transition-transform active:scale-95 sm:w-auto"
-              >
-                Join the Waitlist
-              </Link>
-              
-              <Link 
-                href="/contact" 
-                className="w-full rounded-md border border-zinc-700 bg-transparent px-8 py-4 text-sm font-bold uppercase tracking-wide text-white hover:bg-zinc-800 transition-colors sm:w-auto"
-              >
-                Get in Touch
-              </Link>
+          <div className="grid md:grid-cols-2 gap-12 border-l border-gray-800 pl-8">
+            <div>
+              <h4 className="text-blue-400 font-bold mb-6">Who we want to work with</h4>
+              <ul className="space-y-4">
+                {["Strategic Investors", "Financial Institutions", "Market Infrastructure Partners", "Regulatory & Compliance Experts"].map((who, i) => (
+                  <li key={i} className="flex items-center gap-3 font-bold">
+                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" /> {who}
+                  </li>
+                ))}
+              </ul>
             </div>
-
-            {/* Micro-copy for trust */}
-            <p className="mt-6 text-xs font-medium uppercase tracking-widest text-zinc-500">
-              No commitment required • Early access priority
-            </p>
+            <div>
+              <h4 className="text-green-400 font-bold mb-6">What's Next</h4>
+              <div className="space-y-6">
+                {ROADMAP.map((step, i) => (
+                  <div key={i} className="flex gap-4">
+                    <span className={`text-[10px] font-bold uppercase px-2 py-1 rounded h-fit ${step.status === 'active' ? 'bg-blue-600' : 'bg-gray-800'}`}>
+                      {step.status}
+                    </span>
+                    <div>
+                      <h5 className="font-bold text-sm">{step.title}</h5>
+                      <p className="text-xs text-gray-300">{step.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="py-32 px-6 text-center">
+        <div className="max-w-3xl mx-auto">
+          <FaHandshake className="mx-auto text-blue-600 mb-8" size={48} />
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Join us in building <span className="text-blue-600">The Future</span>.</h2>
+          <p className="text-gray-500 dark:text-gray-400 mb-12">Whether you&apos;re an investor, partner, or collaborator — we&apos;d love to start the conversation.</p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link href="/partnership" className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all">
+              Partner with Us
+            </Link>
+            <Link href="/invest" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all">
+              Invest in Zanari
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

@@ -9,7 +9,7 @@ export default function AboutHero() {
             <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-6xl">
-                        About Zanari Capital
+                        About <span className="text-blue-700">Zanari Capital</span>
                     </h1>
 
                     <p className="mt-8 text-lg leading-8 text-zinc-600 dark:text-zinc-400">

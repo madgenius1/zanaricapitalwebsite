@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutFounder() {
     return (
-        <section className="bg-gray-50 py-20 transition-colors duration-300 dark:bg-black sm:py-32">
+        <section className="bg-gray-50 py-20 transition-colors duration-300 dark:bg-[#121212] sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-12 lg:gap-x-16">
 
@@ -56,7 +56,7 @@ export default function AboutFounder() {
                                             Collins Murichu
                                         </p>
                                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                                            Co-Founder & CEO, Zanari Capital
+                                            CEO & Co-Founder, Zanari Capital
                                         </p>
                                     </div>
                                 </div>

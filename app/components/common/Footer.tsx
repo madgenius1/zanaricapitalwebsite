@@ -14,18 +14,21 @@ const FOOTER_LINKS = {
     Platform: [
         { name: "Features", href: "/features" },
         { name: "Beta", href: "/beta" },
-        { name: "Rafiki", href: "/rafiki" },
+        { name: "Rafiki AI", href: "/rafiki" },
         { name: "Learn", href: "/learn" },
+        { name: "Stocks", href: "/stocks" }
     ],
     Resources: [
-        { name: "Stocks", href: "/stocks" },
+        { name: "Dividends", href: "/dividends" },
+        { name: "Derivatives", href: "/derivatives" },
         { name: "ETFs", href: "/etfs" },
         { name: "Bonds", href: "/bonds" },
-        { name: "Portfolio", href: "/portfolio" },
+        { name: "Portfolio", href: "/portfolio" }
     ],
     Company: [
         { name: "About Us", href: "/about" },
-        { name: "Contact", href: "/contact" },
+        { name: "Contact Us", href: "/contact" },
+        { name: "Be a Partner", href: "/partnership" },
         { name: "Terms", href: "/terms" },
         { name: "Privacy Policy", href: "/privacy" },
     ],
@@ -41,14 +44,6 @@ const SOCIAL_LINKS = [
     { name: "WhatsApp", icon: BsWhatsapp, href: "https://wa.me/zanari" },
 ]
 
-const BOTTOM_LINKS = [
-    { name: "Features", href: "/features" },
-    { name: "About Us", href: "/about" },
-    { name: "Learn", href: "/learn" },
-    { name: "Waitlist", href: "/waitlist" },
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Use", href: "/terms" },
-];
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()

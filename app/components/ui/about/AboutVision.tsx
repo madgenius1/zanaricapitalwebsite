@@ -1,10 +1,10 @@
 export default function AboutVision() {
     return (
-        <section className="relative overflow-hidden bg-gray-50 py-24 transition-colors duration-300 dark:bg-black">
+        <section className="relative overflow-hidden bg-gray-50 py-24 transition-colors duration-300 dark:bg-gray-900">
             {/* Structural Accent: Top Border to separate from previous section */}
             <div className="absolute top-0 left-0 h-px w-full bg-gray-200 dark:bg-gray-800" />
 
-            <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
+            <div className="relative mx-auto max-w-7xl px-4">
                 <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
 
                     {/* Left: Content Block */}

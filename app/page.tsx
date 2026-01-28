@@ -7,6 +7,7 @@ import Solution from "./components/landing/Solution";
 import SellingPoints from "./components/landing/SellingPoints";
 import FAQs from "./components/landing/FAQs";
 import ProblemSolution from "./components/landing/ProblemSolution";
+import LandingFooter from "./components/landing/LandingFooter";
 
 export default function Page() {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
       <CTA />
       <Rafiki />
       <FAQs />
+      <LandingFooter />
     </>
   );
 }

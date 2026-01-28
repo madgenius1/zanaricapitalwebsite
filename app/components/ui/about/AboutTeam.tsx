@@ -1,7 +1,7 @@
 const team = [
     { name: "Collins Murichu", role: "CEO & Co-Founder", initials: "CM" },
     { name: "Nick Juma", role: "CTO & Co-Founder", initials: "NJ" },
-    { name: "Kevin Omwangi", role: "CPO", initials: "KO" },
+    { name: "Kevin Mwangi", role: "CPO", initials: "KO" },
     { name: "Alpha Bravo", role: "CIO and Marketing", initials: "AB" },
     
 ];
@@ -14,7 +14,7 @@ export default function AboutTeam() {
                 <div className="mb-16 flex flex-col items-center text-center">
                     <div className="mb-4 h-1 w-12 bg-gray-900 dark:bg-white" />
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                        The minds behind Zanari
+                        The team behind Zanari
                     </h2>
                     <p className="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
                         A team committed to democratizing asset ownership across the Kenyan landscape.

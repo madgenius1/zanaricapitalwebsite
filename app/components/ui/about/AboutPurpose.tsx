@@ -1,6 +1,6 @@
 export default function AboutPurpose() {
     return (
-        <section className="relative overflow-hidden bg-zinc-50 py-24 dark:bg-black sm:py-32">
+        <section className="relative overflow-hidden bg-zinc-50 py-24 dark:bg-gray-950 sm:py-32">
             {/* Decorative solid element for visual weight */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-zinc-200 dark:bg-zinc-800" />
 
