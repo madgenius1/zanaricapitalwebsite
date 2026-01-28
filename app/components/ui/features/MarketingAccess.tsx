@@ -75,7 +75,7 @@ export default function MarketingAccess() {
                                     </h4>
                                     <p className={`text-sm transition-colors duration-300 ${activeIndex === index
                                         ? "text-gray-200 dark:text-gray-800"
-                                        : "text-gray-500 dark:text-gray-700"
+                                        : "text-gray-500 dark:text-gray-300"
                                         }`}>
                                         {asset.description}
                                     </p>
