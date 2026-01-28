@@ -65,6 +65,12 @@ const CATEGORIES: ETFCategory[] = [
         example: "Precious Metal, Hydrocarbons, Agro Products",
         benefit: "Targeted industry play",
         color: "bg-gray-700"
+    },
+    {
+        title: "Sector ETFs",
+        example: "Banking, Manufacturing, Agriculture",
+        benefit: "Specific sector exposure",
+        color: "bg-orange-700"
     }
 ];
 
@@ -135,13 +141,13 @@ export default function Page() {
             </section>
 
             {/* Types Section */}
-            <section className="py-24 px-6 max-w-7xl mx-auto">
+            <section className="py-24 px-4 max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 tracking-tight">ETF Categories</h2>
                     <p className="text-gray-700 dark:text-gray-200">Tailor your exposure to specific market segments.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 grid-cols-1">
                     {CATEGORIES.map((cat, i) => (
                         <div key={i} className="border-2 border-gray-100 dark:border-gray-900 rounded-4xl p-8 hover:border-blue-600 transition-all">
                             <div className={`w-12 h-1 ${cat.color} mb-8`} />
