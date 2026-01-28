@@ -116,6 +116,15 @@ export default function Page() {
                                             className="w-full p-4 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-600 outline-hidden transition-all"
                                         />
                                     </div>
+                                    <div>
+                                        <label className="block text-xs font-black uppercase tracking-widest text-gray-600 dark:text-gray-400 mb-2">Country</label>
+                                        <input
+                                            required
+                                            type="text"
+                                            placeholder="Country"
+                                            className="w-full p-4 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-600 outline-hidden transition-all"
+                                        />
+                                    </div>
 
                                     <div>
                                         <label className="block text-xs font-black uppercase tracking-widest text-gray-600 dark:text-gray-400 mb-2">Investment Experience (Optional)</label>
