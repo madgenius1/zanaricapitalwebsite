@@ -21,6 +21,11 @@ export default function MarketingAccess() {
             description: "Diversified investing made simple",
             image: "/diversify.webp",
         },
+         {
+            title: "Derivatives",
+            description: "Trade single stock, index, and options contract futures ",
+            image: "/derivatives.webp",
+        },
         {
             title: "Secondary Bonds",
             description: "Access NSE secondary bonds",
