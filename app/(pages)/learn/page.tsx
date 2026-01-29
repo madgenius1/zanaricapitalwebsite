@@ -1,4 +1,7 @@
 
+import { learnMetadata } from '../../../lib/metadata';
+export const metadata = learnMetadata;
+
 import Glossary from "@/app/components/ui/learn/Glossary";
 import HeroLearn from "@/app/components/ui/learn/HeroLearn";
 import LearnFooter from "@/app/components/ui/learn/LearnFooter";

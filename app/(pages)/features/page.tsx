@@ -1,3 +1,7 @@
+
+import { featuresMetadata } from '../../../lib/metadata';
+export const metadata = featuresMetadata;
+
 import FooterFeatures from "@/app/components/ui/features/FooterFeatures";
 import HeroFeatures from "@/app/components/ui/features/HeroFeatures";
 import MarketingAccess from "@/app/components/ui/features/MarketingAccess";

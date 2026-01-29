@@ -1,3 +1,6 @@
+import { rafikiMetadata } from '../../../lib/metadata';
+export const metadata = rafikiMetadata;
+
 import RafikiDoes from "@/app/components/ui/rafiki/RafikiDoes";
 import RafikiHero from "@/app/components/ui/rafiki/RafikiHero";
 import RafikiPurpose from "@/app/components/ui/rafiki/RafikiPurpose";

@@ -1,3 +1,10 @@
+
+import { aboutMetadata } from '../../../lib/metadata';
+
+export const metadata = aboutMetadata;
+
+
+
 import AboutCTA from "@/app/components/ui/about/AboutCTA";
 import AboutFounder from "@/app/components/ui/about/AboutFounder";
 import AboutHero from "@/app/components/ui/about/AboutHero";

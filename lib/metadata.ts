@@ -35,7 +35,7 @@ export const betaMetadata: Metadata = {
 
 // Bonds Page
 export const bondsMetadata: Metadata = {
-  title: `Bonds Investing in Kenya | ${siteName}`,
+  title: `Bonds Investing | ${siteName}`,
   description:
     "Explore government and corporate bonds in Kenya. Learn how bonds work, how yields are earned, and how Zanari makes fixed-income investing accessible and understandable.",
   keywords: [
@@ -62,7 +62,7 @@ export const contactMetadata: Metadata = {
 
 // Derivatives Page
 export const derivativesMetadata: Metadata = {
-  title: `Derivatives Trading Explained | ${siteName}`,
+  title: `Derivatives Trading | ${siteName}`,
   description:
     "Understand derivatives trading in Kenya, including futures and other instruments. Learn risks, use cases, and how Zanari approaches derivatives responsibly.",
   keywords: [
@@ -133,7 +133,7 @@ export const featuresMetadata: Metadata = {
 
 // Invest Page
 export const investMetadata: Metadata = {
-  title: `Start Investing | ${siteName}`,
+  title: `Invest In Us | ${siteName}`,
   description:
     "Start your investing journey with Zanari Capital. Buy and sell NSE stocks, ETFs, bonds, and more through a simple, secure, and Kenyan-first platform.",
   keywords: [
@@ -166,7 +166,7 @@ export const learnMetadata: Metadata = {
 
 // Partnership Page
 export const partnershipMetadata: Metadata = {
-  title: `Partnerships & Investors | ${siteName}`,
+  title: `Partner With Us | ${siteName}`,
   description:
     "Partner with Zanari Capital or invest in our mission to democratize access to capital markets in Kenya through technology, trust, and education.",
   keywords: [
@@ -180,7 +180,7 @@ export const partnershipMetadata: Metadata = {
 
 // Portfolio Page
 export const portfolioMetadata: Metadata = {
-  title: `Your Investment Portfolio | ${siteName}`,
+  title: ` Investment Portfolio | ${siteName}`,
   description:
     "Track and understand your investment portfolio in real time. View performance, asset allocation, dividends, and growth insights with Zanari.",
   keywords: [
@@ -209,7 +209,7 @@ export const privacyMetadata: Metadata = {
 
 // Rafiki AI Page
 export const rafikiMetadata: Metadata = {
-  title: `Rafiki AI Investment Guide | ${siteName}`,
+  title: `Rafiki AI Guide | ${siteName}`,
   description:
     "Meet Rafiki AI, Zanari Capital’s intelligent investment guide. Get explanations, risk insights, and educational support—without automated trading.",
   keywords: [
@@ -225,7 +225,7 @@ export const rafikiMetadata: Metadata = {
 
 // Stocks Page
 export const stocksMetadata: Metadata = {
-  title: `Stocks Trading in Kenya | ${siteName}`,
+  title: `Stocks Trading | ${siteName}`,
   description:
     "Buy and sell NSE-listed stocks with confidence. Learn how stock investing works in Kenya and how Zanari simplifies direct share ownership.",
   keywords: [
