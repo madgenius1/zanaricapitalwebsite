@@ -22,11 +22,11 @@ export default function HeroLearn() {
                         Zanari Academy is your learning hub for understanding Investment Products; Stocks, ETFs, Derivatives, REITS, Crypto, MMFs, and Special Funds.
                     </p>
 
-                    <div className="mt-8 flex flex-wrap gap-4">
+                    {/* <div className="mt-8 flex flex-wrap gap-4">
                         <Link href="/beta" className="rounded-lg font-medium bg-blue-600 dark:text-gray-900 dark:bg-gray-100 text-white px-6 py-3 inline-flex hover:bg-blue-800 dark:hover:bg-gray-200 cursor-pointer transition">
                             Start Learning
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Visual Placeholder */}

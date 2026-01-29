@@ -2,7 +2,7 @@
 
 export default function RafikiAI() {
     return (
-        <section className="bg-linear-to-br from-emerald-600 to-emerald-700 dark:from-emerald-500 dark:to-emerald-600 text-white">
+        <section className="bg-linear-to-br from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white">
             <div className="mx-auto max-w-7xl px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div>
                     <h2 className="text-3xl font-bold">Learn with Rafiki AI</h2>

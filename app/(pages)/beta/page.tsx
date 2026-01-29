@@ -178,7 +178,7 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* Trust Footer */}
+            {/* Trust Footer 
             <footer className="py-12 px-6 border-t border-gray-100 dark:border-gray-900 bg-gray-50 dark:bg-gray-900/30">
                 <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-xs font-bold uppercase tracking-widest">
@@ -191,6 +191,7 @@ export default function Page() {
                     </div>
                 </div>
             </footer>
+            */}
         </div>
     );
 }
