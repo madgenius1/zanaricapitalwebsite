@@ -10,14 +10,43 @@ const baseUrl = "https://zanaricapital.com";
 
 
 export const metadata: Metadata = {
-  title: "Zanari Capital | Invest in Kenyan Stocks",
-  description: "Invest and Trade Stock in Kenya and the Diaspora",
+  title: "Zanari Capital | Invest in and Trade Kenyan Stocks",
+  description: "Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets",
   keywords: [
     "Invest in Kenyan Stocks",
     "Investment Mobile App ",
+    "Buy and sell Kenyan stocks and equity",
     "Stock Trading Platform",
+    "Invest in NSE",
+    "Buy and sell shares in Kenya",
+    "Best stock trading app in Kenya",
+    "NSE mobile app"
   ],
-
+  openGraph: {
+    title: `${siteName}`,
+    description:
+      "Best mobile app for buying and selling stock and equities in Kenya.",
+    url: baseUrl,
+    siteName: siteName,
+    images: [
+      {
+        url: `${baseUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Zanari - Best mobile app for buying and selling stocks, shares, and equities in Kenya",
+      },
+    ],
+    locale: "en_KE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description:
+      "Best mobile app for buying and selling stock, shares, and equities in Kenya.",
+    images: [`${baseUrl}/og-image.jpg`],
+  },
+  metadataBase: new URL(baseUrl),
 };
 
 export default function RootLayout({
