@@ -11,7 +11,7 @@ const baseUrl = "https://zanaricapital.com";
 
 export const metadata: Metadata = {
   title: "Zanari Capital | Invest in and Trade Kenyan Stocks",
-  description: "Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets",
+  description: "Buy and Sell Kenyan Stocks, ETFs, Derivatives, and Invest in the Kenyan Capital Markets",
   keywords: [
     "Invest in Kenyan Stocks",
     "Investment Mobile App ",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteName}`,
     description:
-      "Best mobile app for buying and selling stock and equities in Kenya.",
+      "Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
     url: baseUrl,
     siteName: siteName,
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Zanari - Best mobile app for buying and selling stocks, shares, and equities in Kenya",
+        alt: "Zanari - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
       },
     ],
     locale: "en_KE",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteName,
     description:
-      "Best mobile app for buying and selling stock, shares, and equities in Kenya.",
+      "Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
     images: [`${baseUrl}/og-image.jpg`],
   },
   metadataBase: new URL(baseUrl),
