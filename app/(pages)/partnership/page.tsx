@@ -1,12 +1,12 @@
-import { investMetadata } from '../../../lib/metadata';
-export const metadata = investMetadata;
+import { partnershipMetadata } from '../../../lib/metadata';
+export const metadata = partnershipMetadata;
 
-import InvestContent from '@/app/components/ui/invest/InvestContent';
+import PartnershipContent from '../../components/ui/partnership/PartnershipContent';
 
 export default function Page() {
     return(
         <>
-        <InvestContent />
+        <PartnershipContent />
         </>
     )
 }
